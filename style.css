@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'IRANSans';
+    src: url('fonts/IRANSansWeb.woff2') format('woff2'),
+        url('fonts/IRANSansWeb.woff') format('woff');
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f5;
+    font-family: 'IRANSans', sans-serif;
+    direction: rtl;
+    background-color: #f0f0f5;
+
+}
+
+.bmi-container {
+    max-width: 400px;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.bmi-container h1 {
+    margin-bottom: 20px;
+}
+
+.bmi-container .form-group {
+    margin-bottom: 15px;
+}
+
+main {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+article p {
+    margin-bottom: 20px;
+    color: #666666;
+}
+
+/* Input container styles */
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: none !important;
+    box-shadow: 1px 1px 5px 1px #ddd !important;
+    border-radius: 7px !important;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #4d6af8 !important;
+    box-shadow: 0 0 8px rgba(106, 130, 251, 0.5) !important;
+}
+
+.btn-primary {
+    background-color: #2196F3;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2) !important;
+}
+
+.btn-primary:hover {
+    background-color: #1a79c7;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4) !important;
+}
+
+.text-red {
+    color: red;
+}
+
+.text-green {
+    color: green;
+}
+
+.text-yellow {
+    color: #d5d532;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}

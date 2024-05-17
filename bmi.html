@@ -1,33 +1,41 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bmi</title>
-    <meta name="description" content="محاسبه نمایه توده بدنی">
-    <link rel="stylesheet" href="./style.bmi.css">
-</head>
-<body>
-    <header>
-    </header>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>محاسبه گر BMI</title>
+    <meta name="description" content="محاسبه نمایه توده بدنی" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header></header>
     <main>
-        <h1>bmi</h1>
-        <article>
-            <div>
-                <p>برای برسی نمایه توده بدنی، مقادیر موردنظر را وارد کنید</p>
-                <div>
-                    <label for="height"> قد (cm)</label>
-                    <input type="number" id="height" placeholder="مثال 160">
-                </div>
-                <div>
-                    <label for="Weight">وزن (kg)</label>
-                    <input type="number" id="Weight" placeholder="مثال 50">
-                </div>
-            </div>
-        </article>
+      <div class="bmi-container">
+        <h1>محاسبه گر BMI</h1>
+        <p>برای محاسبه نمایه توده بدنی (BMI)، مقادیر موردنظر را وارد کنید:</p>
+        <div class="form-group">
+          <label for="height">قد (سانتی متر):</label>
+          <input
+            type="number"
+            class="form-control"
+            id="height"
+            placeholder="مثال: 160"
+          />
+        </div>
+        <div class="form-group">
+          <label for="weight">وزن (کیلوگرم):</label>
+          <input
+            type="number"
+            class="form-control"
+            id="weight"
+            placeholder="مثال: 50"
+          />
+        </div>
+        <button id="calculate-btn" class="btn btn-primary">محاسبه</button>
+        <p id="result"></p>
+      </div>
     </main>
-    <p><strong>h</strong>yper <strong>t</strong>ext <strong>m</strong>arkup <strong>L</strong>anguage</p>
-    <footer>
-    </footer>
-</body>
+    <footer></footer>
+    <script src="./script.js"></script>
+  </body>
 </html>
